@@ -8,13 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		B98071B22C4810CE0006FB6A /* PastePouchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98071B12C4810CE0006FB6A /* PastePouchApp.swift */; };
-		B98071B42C4810CE0006FB6A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98071B32C4810CE0006FB6A /* ContentView.swift */; };
-		B98071B62C4810CE0006FB6A /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98071B52C4810CE0006FB6A /* Item.swift */; };
 		B98071B82C4810CF0006FB6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B98071B72C4810CF0006FB6A /* Assets.xcassets */; };
 		B98071BB2C4810CF0006FB6A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B98071BA2C4810CF0006FB6A /* Preview Assets.xcassets */; };
 		B98071C62C4810CF0006FB6A /* PastePouchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98071C52C4810CF0006FB6A /* PastePouchTests.swift */; };
 		B98071D02C4810CF0006FB6A /* PastePouchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98071CF2C4810CF0006FB6A /* PastePouchUITests.swift */; };
 		B98071D22C4810CF0006FB6A /* PastePouchUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98071D12C4810CF0006FB6A /* PastePouchUITestsLaunchTests.swift */; };
+		B98071E12C4816F90006FB6A /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98071E02C4816F90006FB6A /* Menu.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +36,6 @@
 /* Begin PBXFileReference section */
 		B98071AE2C4810CE0006FB6A /* PastePouch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PastePouch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B98071B12C4810CE0006FB6A /* PastePouchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastePouchApp.swift; sourceTree = "<group>"; };
-		B98071B32C4810CE0006FB6A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		B98071B52C4810CE0006FB6A /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		B98071B72C4810CF0006FB6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B98071BA2C4810CF0006FB6A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B98071BC2C4810CF0006FB6A /* PastePouch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PastePouch.entitlements; sourceTree = "<group>"; };
@@ -47,6 +44,7 @@
 		B98071CB2C4810CF0006FB6A /* PastePouchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PastePouchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B98071CF2C4810CF0006FB6A /* PastePouchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastePouchUITests.swift; sourceTree = "<group>"; };
 		B98071D12C4810CF0006FB6A /* PastePouchUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastePouchUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B98071E02C4816F90006FB6A /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +96,10 @@
 			isa = PBXGroup;
 			children = (
 				B98071B12C4810CE0006FB6A /* PastePouchApp.swift */,
-				B98071B32C4810CE0006FB6A /* ContentView.swift */,
-				B98071B52C4810CE0006FB6A /* Item.swift */,
 				B98071B72C4810CF0006FB6A /* Assets.xcassets */,
 				B98071BC2C4810CF0006FB6A /* PastePouch.entitlements */,
 				B98071B92C4810CF0006FB6A /* Preview Content */,
+				B98071E02C4816F90006FB6A /* Menu.swift */,
 			);
 			path = PastePouch;
 			sourceTree = "<group>";
@@ -262,8 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B98071B42C4810CE0006FB6A /* ContentView.swift in Sources */,
-				B98071B62C4810CE0006FB6A /* Item.swift in Sources */,
+				B98071E12C4816F90006FB6A /* Menu.swift in Sources */,
 				B98071B22C4810CE0006FB6A /* PastePouchApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -433,6 +429,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -461,6 +458,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
